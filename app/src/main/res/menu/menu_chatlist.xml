@@ -1,0 +1,17 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.yapp.enigma_test.activity.ChatListActivity">
+
+    <item
+        android:id="@+id/cla_action_add_chat"
+        android:title="@string/action_add_chat"
+        android:icon="@drawable/add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/cla_action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

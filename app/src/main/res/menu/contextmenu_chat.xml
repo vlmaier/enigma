@@ -1,0 +1,10 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.yapp.enigma_test.activity.ChatActivity">
+
+    <item
+        android:id="@+id/cla_action_delete_chat"
+        android:title="@string/action_delete_chat" />
+</menu>

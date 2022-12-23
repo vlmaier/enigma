@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="header"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_dialog_newchat_header"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default Key"
+            android:checked="true"
+            android:id="@+id/rb_default"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_dialog_newchat_header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neuer Key"
+            android:id="@+id/rb_new"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_dialog_newchat_header"
+            android:layout_toRightOf="@+id/tv_keySettings"
+            android:layout_toEndOf="@+id/tv_keySettings" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_chatName"
+            android:hint="@string/newChatDialogHintChatname"
+            android:textSize="14dp"
+            android:layout_below="@+id/rb_default"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords"
+            android:maxLength="20"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_duration"
+            android:hint="@string/newChatDialogHintDuration"
+            android:textSize="14dp"
+            android:layout_below="@+id/et_chatName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newChatDialogCryptSettings"
+            android:textSize="16dp"
+            android:id="@+id/tv_cryptSettings"
+            android:layout_below="@+id/et_duration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_compressionAlgCrypt"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_cryptSettings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_hashAlgCrypt"
+            android:textSize="14dp"
+            android:layout_below="@+id/s_compressionAlgCrypt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newChatDialogIntegrityCheck"
+            android:textSize="14dp"
+            android:id="@+id/ctv_integrity_check"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/s_hashAlgCrypt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newChatDialogKeySettings"
+            android:textSize="16dp"
+            android:id="@+id/tv_keySettings"
+            android:layout_below="@+id/ctv_integrity_check"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_compressionAlgKey"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_keySettings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_hashAlgKey"
+            android:textSize="14dp"
+            android:layout_below="@+id/s_compressionAlgKey"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_keyLength"
+            android:textSize="14dp"
+            android:layout_below="@+id/s_hashAlgKey"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+</ScrollView>

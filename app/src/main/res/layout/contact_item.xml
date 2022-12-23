@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_item_picture_ci"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout android:id="@+id/linLayout_ci"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_item_picture_ci"
+        android:layout_toEndOf="@+id/iv_item_picture_ci">
+
+        <TextView
+            android:id="@+id/tv_item_text_ci"
+            android:text="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_item_subtext_ci"
+            android:text="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout >

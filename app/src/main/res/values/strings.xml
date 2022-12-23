@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">ENIGMA</string>
+    <string name="default_version">1.0</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_synchronize">Kontakte synchronisieren</string>
+    <string name="action_add_contact">Neuen Kontakt hinzufügen</string>
+    <string name="action_delete_contact">Löschen</string>
+    <string name="action_delete_contact_toast">%1$s wurde aus Kontakten entfernt.</string>
+    <string name="action_add_chat">Neuen Chat hinzufügen</string>
+    <string name="action_delete_chat">Löschen</string>
+    <string name="action_delete_chat_toast">%1$s  wurde aus Chats entfernt.</string>
+
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <string name="b_add_text">Hinzufügen</string>
+    <string name="developer">Developed by Hirmer A. | Kamm M. | Maier V. | Ziegert O.</string>
+    <string name="ab_contactActivity">Kontakte</string>
+
+    <string name="importDialogMessage">Wollen Sie ihre Kontake nach %1$s importieren ?</string>
+    <string name="importDialogPositive">Importieren</string>
+    <string name="importDialogNegative">Später</string>
+
+    <string name="newChatDialogMessage">Neuer Chat mit\n%1$s</string>
+    <string name="newChatDialogPositive">Erstellen</string>
+    <string name="newChatDialogNegative">Abbrechen</string>
+    <string name="newChatDialogHintChatname">Name des Chats</string>
+    <string name="newChatDialogHintDuration">Gültigkeitsdauer des Chats</string>
+    <string name="newChatDialogCryptSettings">Verschlüsselungseinstellungen:</string>
+    <string name="newChatDialogIntegrityCheck">Integritätsüberprüfung</string>
+    <string name="newChatDialogKeySettings">Schlüsseleinstellungen:</string>
+
+    <string name="newContactDialogMessage">Neuen Kontakt hinzufügen</string>
+    <string name="newContactDialogPositive">Hinzufügen</string>
+    <string name="newContactDialogNegative">Abbrechen</string>
+    <string name="newContactDialogHintName">Vorname (Nachname)</string>
+    <string name="newContactDialogHintPhonenumber">Telefonnummer (Mobil)</string>
+    <string name="newContactDialogContactAdded">%1$s wurde den Kontankten hinzugefügt.</string>
+
+    <string name="emptyInput">vollständige Eingabe erforderlich.</string>
+    <string name="noDuration">unbegrenzt</string>
+
+    <string name="notificationMessage">Neue Nachricht von %1$s</string>
+
+    <string-array name="spinner_test_array">
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+        <item>item 5</item>
+        <item>item 6</item>
+        <item>item 7</item>
+        <item>item 8</item>
+        <item>item 9</item>
+    </string-array>
+
+</resources>
