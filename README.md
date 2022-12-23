@@ -1,6 +1,6 @@
 # ENIGMA
 
-During my bachelor's degree (spring 2015), three of my colleagues and I had to create a project for one of our courses. We decided to develop an secure messaging application for Android phones. I dug it up and put it on GitHub. And yes ... we didn't have that much experience with VCS back then and copied our repository several times after giving up due to merge conflicts (that's why the commit history isn't there).
+During my bachelor's degree (spring 2015), my colleagues ([@mischcon](https://github.com/mischcon), [@oliverziegert](https://github.com/oliverziegert)) and I had to create a project for one of our courses. We decided to develop an secure messaging application for Android phones. I dug it up and put it on GitHub. And yes ... we didn't have that much experience with VCS back then and copied our repository several times after giving up due to merge conflicts (that's why the commit history isn't there).
 
 It was the time splash screens were in trend ...
 
