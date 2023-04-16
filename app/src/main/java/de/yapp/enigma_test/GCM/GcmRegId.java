@@ -35,7 +35,12 @@ public class GcmRegId
             {
                 gcm = GoogleCloudMessaging.getInstance(context);
             }
-            registrationId = gcm.register(Types.GCMType.GCM_PROJECT_ID);
+            /*
+               TODO: Strongly consider using FLAG_IMMUTABLE, only use FLAG_MUTABLE
+                if some functionality depends on the PendingIntent being mutable,
+                e.g. if it needs to be used with inline replies or bubbles.
+             */
+            // registrationId = gcm.register(Types.GCMType.GCM_PROJECT_ID);
 
             /*save in SharePreferences*/
             prefs.edit().putString(PROPERTY_REG_ID, registrationId).apply();

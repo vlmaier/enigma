@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.WakefulBroadcastReceiver;
+import androidx.legacy.content.WakefulBroadcastReceiver;
 
 /**
  * Created by MischCon on 29.05.2015.
  */
 
 /*  Only purpose is to receive GCM notifications
-*   Handling the notification itsself and starting
+*   Handling the notification itself and starting
 *   other tasks based on the content of the notification
 *   is the purpose of the GcmMessageHandler class
 * */

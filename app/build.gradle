@@ -1,30 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "de.yapp.enigma_test"
-        minSdkVersion 16
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+    namespace 'de.yapp.enigma_test'
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:22.0.0'
-    implementation 'com.android.support:appcompat-v7:22.0.0'
-    implementation 'com.google.android.gms:play-services:7.5.0'
-    implementation files ('libs/core-1.51.0.0.jar')
-    implementation files ('libs/pg-1.51.0.0.jar')
-    implementation files ('libs/prov-1.51.0.0.jar')
-    implementation files ('libs/basicClasses.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.gms:play-services:12.0.1'
 }

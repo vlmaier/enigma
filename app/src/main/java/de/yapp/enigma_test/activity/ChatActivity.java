@@ -2,8 +2,9 @@ package de.yapp.enigma_test.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBarActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,7 @@ import de.yapp.enigma_test.R;
 import de.yapp.enigma_test.adapter.ChatItemArrayAdapter;
 import de.yapp.enigma_test.db.DBHandler;
 
-public class ChatActivity extends ActionBarActivity
+public class ChatActivity extends AppCompatActivity
 {
     public static DBHandler db;
     private static Chat chat;

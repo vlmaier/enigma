@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,7 +23,7 @@ import de.yapp.enigma_test.adapter.ChatListItemArrayAdapter;
 import de.yapp.enigma_test.db.ChatRepository;
 import de.yapp.enigma_test.dialog.AddChatDialog;
 
-public class ChatListActivity extends ActionBarActivity
+public class ChatListActivity extends AppCompatActivity
 {
     private static ChatListItemArrayAdapter adapter;
     private static Button b_addNewChat;

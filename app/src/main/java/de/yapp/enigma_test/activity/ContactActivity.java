@@ -17,7 +17,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -42,7 +43,7 @@ import de.yapp.enigma_test.adapter.ContactItemArrayAdapter;
 import de.yapp.enigma_test.db.ContactRepository;
 import de.yapp.enigma_test.dialog.AddContactDialog;
 
-public class ContactActivity extends ActionBarActivity
+public class ContactActivity extends AppCompatActivity
 {
     private static final int SELECT_PICTURE = 1;
 
