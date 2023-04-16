@@ -1,4 +1,6 @@
-# ENIGMA
+![](https://github.com/vlmaier/enigma/actions/workflows/build.yml/badge.svg)
+
+# ΞNIGMΔ
 
 During my bachelor's degree (spring 2015), my colleagues [@mischcon](https://github.com/mischcon), [@oliverziegert](https://github.com/oliverziegert) and I had a project task for one of our courses. We decided to develop a secure messaging application for Android phones. I dug it up and put it on GitHub. And yes ... we didn't have that much experience with VCS back then and copied our repository several times after giving up due to merge conflicts (that's why the commit history isn't available).
 
